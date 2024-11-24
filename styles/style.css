@@ -54,7 +54,7 @@ img {
 }
 
 .about-section a {
-  color: #00aff4;
+  color: #7364d7;
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ body {
 }
 
 .box-color {
-  background: linear-gradient(to bottom, hsl(207, 100%, 77%), hsla(214, 100%, 13%, 0.418));
+  background: linear-gradient(to bottom, hsl(0, 0%, 75%), hsla(244, 100%, 77%));
 }
 
 .container {
@@ -93,7 +93,7 @@ body {
   z-index: -1;
   filter: blur(5px);
   /* make img darker */
-  background-color: rgb(1, 96, 134);
+  background-color: rgb(#7364d7);
   background-blend-mode: darken;
   /* end */
   background-size: cover;
