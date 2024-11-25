@@ -17,7 +17,7 @@ end
 local Library = {};
 Library = {
 	Open = true;
-	Accent = Color3.fromRGB(119, 120, 255);
+	Accent = Color3.fromRGB(255, 119, 119);
 	FSize = 9;
 	PageAmount = 0;
 	Pages = {};
