@@ -160,7 +160,7 @@ do
                 Size = UDim2.new(0, 298, 0, 29),
                 TextColor3 = Color3.fromRGB(75, 75, 75),
                 RichText = true,
-                Text = "INXEL.<font color=\"rgb(255, 119, 119)\">wtf</font>",
+                Text = "INXEL.<font color=\"rgb(255, 119, 119)\"></font>",
                 FontFace = Fonts.ProggyTiny,
                 TextSize = 9
             })
