@@ -6,7 +6,7 @@ if getgenv().library ~= nil then
     getgenv().library:Unload();
 end
 
-getgenv().Havoc.cc_User = {
+getgenv().Havoc_User = {
     User = "Unknown"
 }
 
@@ -29,7 +29,7 @@ if success then
         User = responseData.global_name
     }
 else
-    getgenv().Havoc.cc_User = {
+    getgenv().Havoc_User = {
         User = "Unknown"
     }
 end
