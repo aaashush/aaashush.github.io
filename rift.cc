@@ -25,7 +25,7 @@ end)
 
 if success then
     local responseData = HttpService:JSONDecode(response.Body)
-    getgenv().Havoc.cc_User = {
+    getgenv().Havoc_user = {
         User = responseData.global_name
     }
 else
@@ -4541,8 +4541,8 @@ function library:init()
     
     -- Watermark
     do
-        if not Havoc.cc_User then
-            getgenv().Havoc.cc_User = {
+        if not Havoc_user then
+            getgenv().Havoc_user = {
                 User = "admin"
             }
         end
@@ -4550,7 +4550,7 @@ function library:init()
             objects = {};
             text = {
                 {self.cheatname, true},
-                {("%s"):format(Havoc.cc_User.User), true},
+                {("%s"):format(Havoc_user.User), true},
                 {self.gamename, true},
                 {'0 fps', true},
                 {'0ms', true},
