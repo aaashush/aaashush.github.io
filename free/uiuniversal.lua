@@ -1,6 +1,6 @@
 ------ * inxel priv_9 Menu * ------
 --[[
-    # Rewriten by: inxel_wtf
+    # Rewriten by: inxel_.pro
 ]]
 
 repeat
@@ -290,14 +290,14 @@ repeat
          local ping = string.format('%.0f', game.Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
          local uid = "1"
          local fpsValue = string.split(game.Stats.Workspace.Heartbeat:GetValueString(), ".")[1]
-         WaterMarkLabel.Text = 'inxel.<font color="rgb(255, 119, 119)">wtf</font> - uid: <font color="rgb(255, 119, 119)">' .. uid .. '</font> / fps: <font color="rgb(255, 119, 119)">' .. fpsValue .. '</font> / ping: <font color="rgb(255, 119, 119)">' .. ping .. '</font> / time: <font color="rgb(255, 119, 119)">' .. time .. '</font>'
+         WaterMarkLabel.Text = 'inxel.<font color="rgb(255, 119, 119)">.pro</font> - uid: <font color="rgb(255, 119, 119)">' .. uid .. '</font> / fps: <font color="rgb(255, 119, 119)">' .. fpsValue .. '</font> / ping: <font color="rgb(255, 119, 119)">' .. ping .. '</font> / time: <font color="rgb(255, 119, 119)">' .. time .. '</font>'
        end
     end)
     return Watermark
  end
  
  local library = {
-    Title = 'inxel.<font color="rgb(255, 119, 119)">wtf</font> || fallen',
+    Title = 'inxel.<font color="rgb(255, 119, 119)">.pro</font> || fallen',
     keybind = Enum.KeyCode.RightBracket,
     Watermark = createWatermark(),
        Colors = {
