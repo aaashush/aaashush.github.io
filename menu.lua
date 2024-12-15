@@ -1,8 +1,7 @@
 local ReplicatedStorage, Lighting, Workspace, RunService, Players, gethui, UIS, TweenService = cloneref(game:GetService("ReplicatedStorage")), cloneref(game:GetService("Lighting")), cloneref(game:GetService("Workspace")), cloneref(game:GetService("RunService")), cloneref(game:GetService("Players")), cloneref(game:GetService("gethui")), cloneref(game:GetService("UserInputService")), game:GetService("TweenService");
 local Camera = game.Workspace.CurrentCamera;
 local local_plr = game:GetService("Players").LocalPlayer;
-local LocalPlayer = game:GetService('Players').LocalPlayer;
-local Mouse = LocalPlayer:GetMouse();
+local LocalPlayer = game:GetService('Players').LocalPlayer;coregui
 
 if not gethui then 
 	gethui = function() return ame:GetService("Players").LocalPlayer.PlayerGui end; IsStudio = true;
