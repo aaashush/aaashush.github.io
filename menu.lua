@@ -1,4 +1,4 @@
-local ReplicatedStorage, Lighting, Workspace, RunService, Players, CoreGui, UIS, TweenService = cloneref(game:GetService("ReplicatedStorage")), cloneref(game:GetService("Lighting")), cloneref(game:GetService("Workspace")), cloneref(game:GetService("RunService")), cloneref(game:GetService("Players")), cloneref(game:GetService("CoreGui")), cloneref(game:GetService("UserInputService")), game:GetService("TweenService");
+local ReplicatedStorage, Lighting, Workspace, RunService, Players, gethui, UIS, TweenService = cloneref(game:GetService("ReplicatedStorage")), cloneref(game:GetService("Lighting")), cloneref(game:GetService("Workspace")), cloneref(game:GetService("RunService")), cloneref(game:GetService("Players")), cloneref(game:GetService("gethui")), cloneref(game:GetService("UserInputService")), game:GetService("TweenService");
 local Camera = game.Workspace.CurrentCamera;
 local local_plr = game:GetService("Players").LocalPlayer;
 local LocalPlayer = game:GetService('Players').LocalPlayer;
@@ -9,8 +9,8 @@ if not gethui then
 end
 
 do -- Checks
-    if game:GetService("CoreGui"):FindFirstChild("UI") then
-        game:GetService("CoreGui").UI:Destroy();
+    if game:GetService("gethui"):FindFirstChild("UI") then
+        game:GetService("gethui").UI:Destroy();
     end 
 end
 
