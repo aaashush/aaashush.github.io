@@ -19,7 +19,7 @@ end
 function Lib:Create(options)
 	if not options then
 		options = {
-			accent = Color3.fromRGB(60, 117, 252);
+			accent = Color3.fromRGB(128, 112, 255);
 		};
 	end;
 	options.func = function(...) end;
@@ -239,7 +239,15 @@ function Lib:Create(options)
 	return options;
 end;
 
-local Loader = Lib:Create({accent = Color3.fromRGB(60, 117, 252)});
+local Loader = Lib:Create({accent = Color3.fromRGB(128, 112, 255)});
+Loader:creategame({name = "Fallen Survival", image = "rbxassetid://94000877216738", status = "Undetected", call = function(v)
+	print("NOT RELEASED YET PLEASE WAIT")
+end});
+
+Loader:creategame({name = "bombline", image = "rbxassetid://94000877216738", status = "Undetected", call = function(v)
+	print("NOT RELEASED YET PLEASE WAIT")
+end});
+
 Loader:creategame({name = "Da Hood", image = "rbxassetid://94000877216738", status = "Undetected", call = function(v)
 	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f19455d6202484266962855f224422e2.lua"))()
 end});
