@@ -240,11 +240,11 @@ function Lib:Create(options)
 end;
 
 local Loader = Lib:Create({accent = Color3.fromRGB(128, 112, 255)});
-Loader:creategame({name = "Fallen Survival", image = "rbxassetid://94000877216738", status = "Undetected", call = function(v)
+Loader:creategame({name = "Fallen Survival", image = "rbxassetid://94000877216738", status = "Down", call = function(v)
 	print("NOT RELEASED YET PLEASE WAIT")
 end});
 
-Loader:creategame({name = "bombline", image = "rbxassetid://94000877216738", status = "Undetected", call = function(v)
+Loader:creategame({name = "bombline", image = "rbxassetid://94000877216738", status = "Down", call = function(v)
 	print("NOT RELEASED YET PLEASE WAIT")
 end});
 
