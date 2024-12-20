@@ -64,7 +64,7 @@ function Lib:Create(options)
 	Lib["3"] = Instance.new("ImageLabel", Lib["2"]);
 	Lib["3"]["ZIndex"] = -1;
 	Lib["3"]["BorderSizePixel"] = 0;
-	Lib["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+	Lib["3"]["BackgroundColor3"] = Color3.fromRGB(16, 16, 16);
 	Lib["3"]["ImageColor3"] = options.accent;
 	Lib["3"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 	Lib["3"]["Image"] = [[rbxassetid://4996891970]];
@@ -200,7 +200,7 @@ function Lib:Create(options)
 
 		Lib["c"] = Instance.new("ImageLabel", Lib["8"]);
 		Lib["c"]["BorderSizePixel"] = 0;
-		Lib["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+		Lib["c"]["BackgroundColor3"] = Color3.fromRGB(16,16, 16);
 		Lib["c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 		Lib["c"]["Image"] = opt.image;
 		Lib["c"]["Size"] = UDim2.new(0, 40, 0, 40);
@@ -219,7 +219,7 @@ function Lib:Create(options)
 		Lib["f"]["BorderSizePixel"] = 0;
 		Lib["f"]["TextXAlignment"] = Enum.TextXAlignment.Right;
 		Lib["f"]["TextTransparency"] = 0.59;
-		Lib["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+		Lib["f"]["BackgroundColor3"] = Color3.fromRGB(16,16, 16);
 		Lib["f"]["TextSize"] = 14;
 		Lib["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 		Lib["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
@@ -248,10 +248,10 @@ Loader:creategame({name = "bombline", image = "rbxassetid://94000877216738", sta
 	print("NOT RELEASED YET PLEASE WAIT")
 end});
 
-Loader:creategame({name = "Da Hood", image = "rbxassetid://94000877216738", status = "Undetected", call = function(v)
+Loader:creategame({name = "Da Hood", image = "rbxassetid://13159528867", status = "Undetected", call = function(v)
 	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/f19455d6202484266962855f224422e2.lua"))()
 end});
 
-Loader:creategame({name = "Universal", image = "rbxassetid://5322533314", status = "Undetected", call = function(v)
+Loader:creategame({name = "Universal", image = "rbxassetid://11843683545", status = "Undetected", call = function(v)
 	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1226ac083ed45cb2f9eba7a160936dd2.lua"))()
 end});
