@@ -1,6 +1,6 @@
 ------ * yero priv_9 Menu * ------
 --[[
-    # Rewriten by: yero_lol
+    # Rewriten by: yero_xyz
 ]]
 
 repeat
@@ -8,8 +8,8 @@ repeat
  until game:IsLoaded()
  
  -- Menu/UI Creation
- if not isfile("yero.lol") then
-    makefolder("yero.lol")
+ if not isfile("yero.xyz") then
+    makefolder("yero.xyz")
  end
  
  local menu = game:GetObjects("rbxassetid://17171194056")[1] 
@@ -290,14 +290,14 @@ repeat
          local ping = string.format('%.0f', game.Stats.Network.ServerStatsItem["Data Ping"]:GetValue())
          local uid = "1"
          local fpsValue = string.split(game.Stats.Workspace.Heartbeat:GetValueString(), ".")[1]
-         WaterMarkLabel.Text = 'yero.<font color="rgb(115, 100, 215)">lol</font> - uid: <font color="rgb(115, 100, 215)">' .. uid .. '</font> / fps: <font color="rgb(115, 100, 215)">' .. fpsValue .. '</font> / ping: <font color="rgb(115, 100, 215)">' .. ping .. '</font> / time: <font color="rgb(115, 100, 215)">' .. time .. '</font>'
+         WaterMarkLabel.Text = 'yero.<font color="rgb(115, 100, 215)">xyz</font> - uid: <font color="rgb(115, 100, 215)">' .. uid .. '</font> / fps: <font color="rgb(115, 100, 215)">' .. fpsValue .. '</font> / ping: <font color="rgb(115, 100, 215)">' .. ping .. '</font> / time: <font color="rgb(115, 100, 215)">' .. time .. '</font>'
        end
     end)
     return Watermark
  end
  
  local library = {
-    Title = 'yero.<font color="rgb(115, 100, 215)">lol</font> || fallen',
+    Title = 'yero.<font color="rgb(115, 100, 215)">xyz</font> || fallen',
     keybind = Enum.KeyCode.RightBracket,
     Watermark = createWatermark(),
        Colors = {
@@ -2323,7 +2323,7 @@ repeat
                             if v == x then return true end
                             end return false end
                             function library:createConfig()
-                                makefolder("yero.lol")
+                                makefolder("yero.xyz")
                                 local name = library.flags["config_name"]
                                 if contains(library.options["config_box"].values, name) then return library:Notify(name..".cfg already exists!", 5) end
                                 if name == "" then return library:Notify("You need to put a name in!", 5) end
@@ -2335,14 +2335,14 @@ repeat
                                 else jig[i] = v
                                 end
                             end
-                            writefile("yero.lol/"..name..".cfg",game:GetService("HttpService"):JSONEncode(jig))
+                            writefile("yero.xyz/"..name..".cfg",game:GetService("HttpService"):JSONEncode(jig))
                             library:Notify("Succesfully created config "..name..".cfg!", 5)
                             library:refreshConfigs()
                         end
  
                         function library:saveConfig()
                             pcall(function()
-                                makefolder("yero.lol")
+                                makefolder("yero.xyz")
                                 local name = library.flags["config_box"]
                                 if not name then
                                     return
@@ -2406,7 +2406,7 @@ repeat
  
                 function library:refreshConfigs()
                     local tbl = {}
-                    for i,v in next, listfiles("yero.lol") do table.insert(tbl,v) end
+                    for i,v in next, listfiles("yero.xyz") do table.insert(tbl,v) end
                     library.options["config_box"].refresh(tbl)
                 end      
             end)()                         
